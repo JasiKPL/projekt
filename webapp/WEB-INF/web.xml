@@ -24,6 +24,22 @@
   	<servlet-name>TogglePremium</servlet-name>
    	<servlet-class>servlets.TogglePremium</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>ListAddresses</servlet-name>
+    <servlet-class>servlets.ListAddresses</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CreateAddress</servlet-name>
+    <servlet-class>servlets.CreateAddress</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateAddress</servlet-name>
+    <servlet-class>servlets.UpdateAddress</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteAddress</servlet-name>
+    <servlet-class>servlets.DeleteAddress</servlet-class>
+  </servlet>
   
   <servlet-mapping>
     <servlet-name>RegisterUser</servlet-name>
@@ -44,6 +60,22 @@
   <servlet-mapping>
     <servlet-name>TogglePremium</servlet-name>
     <url-pattern>/premium</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListAddresses</servlet-name>
+    <url-pattern>/addresses</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateAddress</servlet-name>
+    <url-pattern>/address/create</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateAddress</servlet-name>
+    <url-pattern>/address/edit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteAddress</servlet-name>
+    <url-pattern>/address/delete</url-pattern>
   </servlet-mapping>
   
   <filter>

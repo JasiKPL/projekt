@@ -18,8 +18,8 @@ public class LoginFilter implements Filter {
 		HttpSession session = req.getSession(true);
 		String username = (String) session.getAttribute("user");
 		
-		if (!username.isEmpty()) {
-			res.sendRedirect("/servlet2/user");
+		if (username != null && !username.isEmpty()) {
+			res.sendRedirect("/servlet2/addresses");
 		}
 		filter.doFilter(request, response);
 	}

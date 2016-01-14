@@ -18,7 +18,7 @@ public class RegisterUserFilter implements Filter {
 		HttpSession session = req.getSession(true);
 		String username = (String) session.getAttribute("user");
 		
-		if (!username.isEmpty()) {
+		if (username != null && !username.isEmpty()) {
 			res.sendRedirect("/servlet2/user");
 		}
 		filter.doFilter(request, response);
